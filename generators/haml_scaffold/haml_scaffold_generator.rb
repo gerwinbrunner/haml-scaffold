@@ -63,7 +63,8 @@ class HamlScaffoldGenerator < Rails::Generator::NamedBase
       m.directory('app/views/layouts')
       m.directory('public/stylesheets')
       m.template('layout.html.haml.erb', 'app/views/layouts/application.html.haml', :collision => :skip, :assigns => {:application_name => @application_name})
-      m.template('stylesheet.css', 'public/stylesheets/sass/application.css', :collision => :skip)
+      m.template('application.css', 'public/stylesheets/application.css', :collision => :skip)
+      m.template('resources_controller.rb', 'app/controllers/resources_controller.rb', :collision => :skip)
       m.route_resources controller_file_name
       m.dependency 'model', [name] + @args, :collision => :skip
 
