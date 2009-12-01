@@ -1,4 +1,4 @@
-%h1 <%= plural_name.capitalize %>
+%h1 <%= plural_name.humanize %>
 
 - if @<%= plural_name %>.empty?
   %p There are no <%= plural_name %> to show yet.

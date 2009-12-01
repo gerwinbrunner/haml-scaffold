@@ -1,4 +1,4 @@
-%h1= "<%= singular_name.capitalize %>: #{<%= attributes.empty? ? ("\"#{class_name} " + '##{@' + singular_name + '.to_param}"') : "@#{singular_name}.#{attributes.first.name}" %>}"
+%h1= "<%= singular_name.humanize %>: #{<%= attributes.empty? ? ("\"#{class_name} " + '##{@' + singular_name + '.to_param}"') : "@#{singular_name}.#{attributes.first.name}" %>}"
 
 = details_table :object => @<%= singular_name %>, :only=>%w[<%= attributes.map(&:name).join(" ") %>]
 
