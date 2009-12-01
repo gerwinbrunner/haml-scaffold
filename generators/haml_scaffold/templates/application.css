@@ -1,3 +1,5 @@
+/* @override http://print.local/stylesheets/application.css */
+
 body {
   text-align: center; }
 
@@ -9,3 +11,130 @@ h1 {
   width: 800px;
   text-align: left;
   margin: auto; }
+
+
+
+
+.details_table {
+	padding-top: 15px;
+	font: 16px "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.details_table .row {
+	background-color: #efefef;
+}
+
+.details_table .row .field {
+	text-align: right;
+	color: #a4a4a4;
+	padding: 8px 15px;
+	min-width: 125px;
+	vertical-align: top;
+}
+
+.details_table .row .value {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding: 8px 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.no_data {
+    color: #C00;
+}
+
+
+
+
+
+.ui-collection {
+	width: 100%;
+	padding-top: 15px;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.ui-collection th {
+	text-align: center;
+	background-color: #efefef;
+	border: 1px solid #f8f8f8;
+	padding: 18px 15px 11px;
+}
+
+.ui-collection tr {
+	background-color: #efefef;
+	display: table-row;
+}
+
+.ui-collection td {
+	padding: 10px 15px 8px;
+	border: 1px solid #f8f8f8;
+	max-height: 1em;
+}
+
+.ui-collection td.order-order_code {
+	text-align: right;
+	text-transform: uppercase;
+	width: 1px;
+	white-space: nowrap;
+}
+
+.ui-collection td {
+	white-space: nowrap;
+}
+
+.ui-collection td.order-address {
+	width: 100%;
+}
+
+.ui-collection td.order-amount {
+	text-align: right;
+}
+
+
+
+
+
+.oneline {
+	display: run-in;
+	height: 1em;
+	overflow: hidden;
+}
+
+
+.details_table .row td.has_text_field {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.details_table td.has_text_field input {
+	width: 100%;
+	font: 16px "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
