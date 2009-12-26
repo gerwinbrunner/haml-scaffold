@@ -61,9 +61,7 @@ class HamlScaffoldGenerator < Rails::Generator::NamedBase
       m.template('helper.rb.erb',          File.join('app/helpers',     controller_class_path, "#{controller_file_name}_helper.rb"))
       m.template('helper_test.rb.erb',     File.join('test/unit/helpers',    controller_class_path, "#{controller_file_name}_helper_test.rb"))
       m.directory('app/views/layouts')
-      m.directory('public/stylesheets')
       m.template('layout.html.haml.erb', 'app/views/layouts/application.html.haml', :collision => :skip, :assigns => {:application_name => @application_name})
-      m.template('application.css', 'public/stylesheets/application.css', :collision => :skip)
       m.template('resources_controller.rb', 'app/controllers/resources_controller.rb', :collision => :skip)
       m.route_resources controller_file_name
       m.dependency 'model', [name] + @args, :collision => :skip
