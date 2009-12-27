@@ -6,8 +6,8 @@
 <% for attribute in attributes -%>
       .field
         = f.label :<%= attribute.name %>
-      .input.<%= attribute.field_type %>
-        = f.<%= attribute.field_type %> :<%= attribute.name %>
+        .input.<%= attribute.field_type %>
+          = f.<%= attribute.field_type %> :<%= attribute.name %>
 <% end -%>
       .submit
         = f.submit "Submit"
