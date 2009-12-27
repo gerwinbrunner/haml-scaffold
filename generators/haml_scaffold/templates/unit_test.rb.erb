@@ -1,0 +1,9 @@
+require 'test_helper'
+
+class <%= class_name %>Test < ActiveSupport::TestCase
+  def setup 
+    @<%= singular_name %> = Factory(:<%= singular_name %>)
+  end
+
+  should 'be tests here for <%= class_name %>'
+end
