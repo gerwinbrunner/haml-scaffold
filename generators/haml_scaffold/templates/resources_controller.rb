@@ -1,3 +1,2 @@
-class ResourcesController < ApplicationController
-  inherit_resources
+class ResourcesController < ResourceController::Base
 end

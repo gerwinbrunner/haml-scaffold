@@ -1,9 +1,13 @@
-- form_for(<%= singular_name %>) do |f|
-  %fieldset
-    = f.error_messages
+#<%= plural_name %>_form
+  - form_for(<%= singular_name %>) do |f|
+    .form_block
+      .error_block
+        = f.error_messages
 <% for attribute in attributes -%>
-    .field-2
-      = f.label :<%= attribute.name %>
-      .<%= attribute.field_type %>= f.<%= attribute.field_type %> :<%= attribute.name %>
+      .field
+        = f.label :<%= attribute.name %>
+      .input.<%= attribute.field_type %>
+        = f.<%= attribute.field_type %> :<%= attribute.name %>
 <% end -%>
-    .submit= f.submit "Submit"
+      .submit
+        = f.submit "Submit"
