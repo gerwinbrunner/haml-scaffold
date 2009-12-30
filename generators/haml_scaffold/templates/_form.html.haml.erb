@@ -1,13 +1,9 @@
 #<%= plural_name %>_form
-  - form_for(<%= singular_name %>) do |f|
-    .form_block
-      .error_block
-        = f.error_messages
+  - semantic_form_for(<%= singular_name %>) do |f|
+    .error_block
+      = f.error_messages
+    - f.inputs do
 <% for attribute in attributes -%>
-      .field
-        = f.label :<%= attribute.name %>
-        .input.<%= attribute.field_type %>
-          = f.<%= attribute.field_type %> :<%= attribute.name %>
+      = f.input :<%= attribute.name %>
 <% end -%>
-      .submit
-        = f.submit "Submit"
+    = f.buttons 
